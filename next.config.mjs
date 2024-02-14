@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
-// const nextConfig = {};
+const nextConfig = {};
 
+export default nextConfig;
+
+// const nextConfig = {
+//     output: 'export',
+//     distDir: 'dist',
+// }
+// // module.exports = nextConfig;
 // export default nextConfig;
-
-const nextConfig = {
-    output: 'export',
-    reactStrictMode: true,
-}
-module.exports = nextConfig
