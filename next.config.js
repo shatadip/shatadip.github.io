@@ -7,11 +7,11 @@ const nextConfig = {
     },
 };
 
-export default nextConfig;
+// export default nextConfig;
 
 // const nextConfig = {
 //     output: 'export',
 //     distDir: 'dist',
 // }
-// // module.exports = nextConfig;
+module.exports = nextConfig;
 // export default nextConfig;
