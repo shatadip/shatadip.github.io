@@ -2,7 +2,6 @@
   "name": "shatadip.github.io",
   "version": "0.1.0",
   "private": false,
-  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
