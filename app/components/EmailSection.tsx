@@ -20,13 +20,10 @@ const EmailSection: React.FC = () => {
 
     // Form the request for sending data to the server.
     const options = {
-      // The method is POST because we are sending data.
       method: "POST",
-      // Tell the server we're sending JSON.
       headers: {
         "Content-Type": "application/json",
       },
-      // Body of the request is the JSON data we created above.
       body: JSONdata,
     };
 
@@ -72,7 +69,7 @@ const EmailSection: React.FC = () => {
       <div>
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
-            Email sent successfully!
+            [Success] Thank you for reaching out! I will get back to you shortly.
           </p>
         ) : (
           <form className="flex flex-col" onSubmit={handleSubmit}>
