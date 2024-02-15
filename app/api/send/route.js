@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export const runtime = 'edge';
-// export const dynamic = 'force-dynamic';
+export const dynamic = 'force-dynamic';
 
 const RESEND_API_KEY = 're_PwtCWRpu_GqJKaihzxKdXunG1dujXN2hW';//process.env.RESEND_API_KEY;
 
