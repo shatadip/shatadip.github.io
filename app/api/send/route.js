@@ -1,3 +1,4 @@
+"use client";
 import { NextResponse } from 'next/server';
 
 export const runtime = 'edge';
@@ -14,7 +15,9 @@ export async function POST(req) {
 
   // Extract required fields from the request body
   const { email, subject, message } = requestBody;
-  const msgPtagged=message.split('\n').map(str => <p>{str}</p>);
+  // const msgPtagged=message.split('\n').map(str => <p>{str}</p>);
+  const msgPtagged = message.split('\n').map((str, index) => <p key={index}>{str}</p>);
+
   // Construct the email content
   const htmlContent = renderToStaticMarkup(
     <>

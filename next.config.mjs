@@ -13,4 +13,11 @@ module.exports = nextConfig;
 
 //dev
 // const nextConfig = {}
-// export default nextConfig;
+// const nextConfig = {
+//     output: 'export',
+//     distDir: 'dist',
+//     images: {
+//         unoptimized: true,
+//     },
+// };
+//  export default nextConfig;
