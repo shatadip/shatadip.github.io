@@ -11,7 +11,7 @@ const nextConfig = {
 
 module.exports = nextConfig;
 
-//dev
+//build
 // const nextConfig = {
 //     output: 'export',
 //     distDir: 'dist',
@@ -19,4 +19,8 @@ module.exports = nextConfig;
 //         unoptimized: true,
 //     },
 // };
+//  export default nextConfig;
+
+//dev
+// const nextConfig = {};
 //  export default nextConfig;
