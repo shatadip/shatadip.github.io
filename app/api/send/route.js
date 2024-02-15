@@ -30,8 +30,8 @@ export async function POST(req) {
     </>
   );
 
-  //const fromDev = 'Acme <onboarding@resend.dev>'; //localhost
-  const fromProd = 'Shatadip.com <noreply@shatadip.com>'; //production
+  const fromDev = 'Acme <onboarding@resend.dev>'; //localhost
+  // const fromProd = 'Shatadip.com <noreply@shatadip.com>'; //production
 
   // Send email using fetch
   const res = await fetch('https://api.resend.com/emails', {
@@ -41,7 +41,7 @@ export async function POST(req) {
       'Authorization': `Bearer ${RESEND_API_KEY}`,
     },
     body: JSON.stringify({
-      from: fromProd,
+      from: fromDev,
       to: ['shatadip.majumder@gmail.com'],
       subject: subject,
       html: htmlContent,

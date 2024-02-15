@@ -12,7 +12,6 @@ const nextConfig = {
 module.exports = nextConfig;
 
 //dev
-// const nextConfig = {}
 // const nextConfig = {
 //     output: 'export',
 //     distDir: 'dist',
