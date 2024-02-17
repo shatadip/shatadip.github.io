@@ -33,7 +33,7 @@ const projectsData: Project[] = [
     image: "/images/chrome-extensions/10.png",
     tag: ["All", "Chrome Extensions"],
     gitUrl: "https://github.com/shatadip/Emoji-Keyboard-1999",
-    previewUrl: "/",
+    previewUrl: "https://chrome.google.com/webstore/detail/igaghopjhplffamlgcaenidboejilmca",
   },
   {
     id: 3,

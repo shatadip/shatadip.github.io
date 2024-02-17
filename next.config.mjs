@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-//prod
+//prod (for GitHub Pages)
 
 // const nextConfig = {
 //     output: 'export',
@@ -11,7 +11,7 @@
 
 // module.exports = nextConfig;
 
-//build
+//build (for local build to dist)
 // const nextConfig = {
 //     output: 'export',
 //     distDir: 'dist',
@@ -21,6 +21,6 @@
 // };
 //  export default nextConfig;
 
-//dev
+//dev (for local & vercel)
 const nextConfig = {};
  export default nextConfig;
