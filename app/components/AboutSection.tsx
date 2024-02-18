@@ -21,7 +21,7 @@ const TAB_DATA: TabData[] = [
         <li>PostgreSQL, MySQL, DynamoDB, MongoDB Atlas, Firebase, localStorage, IndexedDB</li>
         <li>Chrome Manifest V3</li>
         <li>Git & GitHub</li>
-        <li>AWS, GCP, Linode, DigitalOcean</li>
+        <li>AWS, GCP, Linode, DigitalOcean, Oracle Cloud</li>
         <li>BASH</li>
       </ul>
     ),

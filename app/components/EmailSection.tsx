@@ -7,9 +7,16 @@ import Image from "next/image";
 
 const EmailSection: React.FC = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [sendButtonClicked, setSendButtonClicked] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSendButtonClicked(true);
+    setLoading(true);
+    setError(null); // Reset any previous error
     const data = {
       email: (e.target as any).email.value,
       subject: (e.target as any).subject.value,
@@ -33,7 +40,11 @@ const EmailSection: React.FC = () => {
     if (response.status === 200) {
       console.log("Message sent.");
       setEmailSubmitted(true);
+    } else {
+      setError("An error occurred while sending your message.");
     }
+
+    setLoading(false);
   };
 
   return (
@@ -46,7 +57,7 @@ const EmailSection: React.FC = () => {
         borderColor: 'rgba(255,125,255,0.2)'
     }} />
       <div className="grid md:grid-cols-2 my-12 md:my-9 py-18 gap-4 relative">
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+      
       <div className="z-9">
         <h5 className="text-xl font-bold text-white my-2">
           Let&apos;s Connect
@@ -67,7 +78,11 @@ const EmailSection: React.FC = () => {
         </div>
       </div>
       <div>
-        {emailSubmitted ? (
+      {error && <p className="text-red-500">{error}</p>}
+
+        {loading ? (
+          <p className="text-yellow-500">Sending...</p>
+        ) : emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
             [Success] Thank you for reaching out! I will get back to you shortly.
           </p>
@@ -122,6 +137,8 @@ const EmailSection: React.FC = () => {
             <button
               type="submit"
               className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+              disabled={sendButtonClicked}
+              style={{ cursor: sendButtonClicked ? 'not-allowed' : 'pointer' }}
             >
               Send Message
             </button>
