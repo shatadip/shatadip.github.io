@@ -68,7 +68,7 @@ const projectsData: Project[] = [
     description: "A course to help you build your own time management/productivity framework that works exclusively for you.",
     image: "/images/sc1280720/7.png",
     tag: ["All", "Courses"],
-    gitUrl: "https://www.skillshare.com/en/classes/Time-Management-Productivity-Deep-Dive/967231494?via=user-profile",
+    gitUrl: "https://www.udemy.com/course/time-management-and-productivity-deep-dive/?referralCode=135DE20E4FABEE99F097",
     previewUrl: "/",
   },
   {

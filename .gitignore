@@ -9,6 +9,7 @@
 # Custom
 
 /pages/
+./package-lock.json
 
 # testing
 /coverage
