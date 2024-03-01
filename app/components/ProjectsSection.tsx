@@ -55,6 +55,15 @@ const projectsData: Project[] = [
   },
   {
     id: 5,
+    title: "VIM Advanced Masterclass",
+    description: "Vim is often called a \"programmer's editor,\" 💻 and is so useful for programming that many consider it an entire IDE 🛠️.",
+    image: "/images/sc1280720/vim.png",
+    tag: ["All", "Courses"],
+    gitUrl: "https://www.udemy.com/course/vim-advanced-masterclass/?referralCode=EDF82DD76DCFB7257672",
+    previewUrl: "/",
+  },
+  {
+    id: 6,
     title: "Launch your Website for free with GitHub Pages",
     description: "A course that breaks down each step to host your own website with GitHub Pages, which will be FREE forever.",
     image: "/images/sc1280720/12.png",
@@ -63,7 +72,7 @@ const projectsData: Project[] = [
     previewUrl: "/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Time Management & Productivity Deep Dive",
     description: "A course to help you build your own time management/productivity framework that works exclusively for you.",
     image: "/images/sc1280720/7.png",
@@ -72,7 +81,7 @@ const projectsData: Project[] = [
     previewUrl: "/",
   },
   {
-    id: 7,
+    id: 8,
     title: "CV / Resume for Experienced & Freshers",
     description: "A course on how you can prepare a professional resume whether you are a fresher or an experienced candidate.",
     image: "/images/sc1280720/1.png",
@@ -81,7 +90,7 @@ const projectsData: Project[] = [
     previewUrl: "/",
   },
   {
-    id: 8,
+    id: 9,
     title: "Happiness Secrets",
     description: "A Happiness Course, broken down into 7 simple steps, to help you achieve everlasting happiness and rapid growth.",
     image: "/images/sc1280720/hs.png",
