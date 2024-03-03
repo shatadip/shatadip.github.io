@@ -10,7 +10,8 @@ const HeroSection = () => {
   // default constants
   const chromePostmannLink = "https://chrome.google.com/webstore/detail/okonkfbibmnmlpcookfdplminfemfhgf";
   const coursesSection = "/#courses";
-  const CV = "assets/Shatadip-CV.pdf";
+  // const CV = "assets/Shatadip-CV.pdf";
+  const CV = "assets/CV_Shatadip_Majumder_March_2024.pdf";
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
