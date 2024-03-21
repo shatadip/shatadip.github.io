@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 // components
 import Navbar from "./components/Navbar";
 
@@ -23,6 +23,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         </body>
+        <GoogleAnalytics gaId="G-TX0ZM7323L" />
     </html>
   );
 }
